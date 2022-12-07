@@ -1,0 +1,21 @@
+body{
+    background: #16353E;
+    font-family: sans-serif;
+}
+
+img{
+
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.img-fluid{
+    top: 200px;
+    position: relative;
+       
+}
