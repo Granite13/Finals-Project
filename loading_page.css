@@ -11,6 +11,7 @@ img{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    float: inherit;
 
 }
 
@@ -18,4 +19,53 @@ img{
     top: 200px;
     position: relative;
        
+}
+
+.container{
+    
+    width:  100%;
+    min-height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 10px;
+    letter-spacing: 1px;
+
+}
+
+.loading{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.loading .line-box{
+    padding: 2px;
+    width: 40%;
+    height: 20px;
+    border: 2px solid #FFAD31;
+    border-radius: 20px;
+}
+
+.loading .line-box .line{
+    height: 20px;
+    border-radius: 20px;
+    background-color: #a05b00;
+    animation: loading 2s forwards cubic-bezier(0,0,0,0);
+}
+
+@keyframes loading {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
 }
